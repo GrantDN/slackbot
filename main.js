@@ -45,7 +45,7 @@ app.post('/action-endpoint', function (req, res)
           url: 'https://slack.com/api/chat.postMessage',
           method: 'POST',
           headers,
-          body: JSON.stringift(reply)
+          body: JSON.stringify(reply)
         };
 
         console.log(body);
