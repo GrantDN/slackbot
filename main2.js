@@ -20,8 +20,7 @@ app.post('/action-endpoint', function (req, res) {
   const reply = {
     "challenge": challenge
 };
-res.json(reply);
-});
+
   const headers = {
     'Content-type': 'application/json',
     'Authorization': 'Bearer ${process.env.TOKEN}'
