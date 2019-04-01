@@ -1,6 +1,12 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
+  app.get('/', function (req, res) {
+    const reply = {
+    "status": "ok"
+  };
+  res.json(reply);
+});
 const request = require('request');
 
 app.use(bodyParser.json());
